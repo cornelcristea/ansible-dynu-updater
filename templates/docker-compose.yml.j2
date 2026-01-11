@@ -8,6 +8,6 @@ services:
     restart: unless-stopped
     environment:
       - USERNAME={{ dynu_username }}
-      - HASHED_PASSWORD={{ dynu_password }}
+      - HASHED_PASSWORD={{ dynu_password | hash('md5') }}
       - HOSTNAME={{ hostname }}
 {% endfor %}
