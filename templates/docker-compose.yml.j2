@@ -1,7 +1,7 @@
 ---
 services:
 {% for hostname in dynu_hosts %}
-{% set subdomain = hostname.split('.')[0] | %}
+{% set subdomain = hostname.split('.')[0] %}
   dynu_{{ subdomain }}:
     image: {{ dynu_docker_image }}
     container_name: dynu_{{ subdomain }}
