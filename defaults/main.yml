@@ -1,0 +1,13 @@
+---
+# defaults file for ansible-dynu-updater
+
+dynu_username: "YOUR_USERNAME_HERE"
+
+# Either HASHED_PASSWORD or a plain password (which will be hashed) must be provided.
+# This should be your Dynu IP Update Password, not your account password. (https://www.dynu.com/en-US/ControlPanel/ManageCredentials)
+# For a better security, use Ansible Vault to encrypt the password.
+dynu_password: "YOUR_PASSWORD_HERE"
+
+dynu_hosts:
+  - myapp.freeddns.org
+  - myblog.freeddns.org

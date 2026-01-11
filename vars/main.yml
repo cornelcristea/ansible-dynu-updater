@@ -1,0 +1,4 @@
+---
+# vars file for ansible-role-dynu-updater
+dynu_docker_image: longkeyy/dynu-updater:1.1
+dynu_base_dir: /opt/dynu

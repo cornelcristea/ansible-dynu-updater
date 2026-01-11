@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Cornel Cristea
+  role_name: dynu_updater
+  description: Deploy Dynu IP Updater Docker containers to keep your Dynu DNS records updated with your current IP address.
+
+  license: MIT
+
+  min_ansible_version: 2.1
+
+  min_ansible_container_version: 1.0.0
+
+  galaxy_tags:
+    - dynu
+    - dyndns
+    - docker
+    - ddns
+
+dependencies: []

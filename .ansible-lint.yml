@@ -1,0 +1,19 @@
+skip_list:
+  - "208"
+  - fqcn[action-core]
+  - fqcn[action]
+  - name[missing]
+  - name[template]
+  - key-order[task]
+  - name[play]
+  - name[casing]
+  - no-free-form
+  - run-once
+  - no-changed-when
+  - schema[meta]
+  - role-name
+
+exclude_paths:
+  - .venv
+  - .ansible
+  - tests

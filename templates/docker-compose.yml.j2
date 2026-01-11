@@ -1,0 +1,13 @@
+---
+services:
+{% for hostname in dynu_hosts %}
+{% set subdomain = hostname.split('.')[0] | %}
+  dynu_{{ subdomain }}:
+    image: {{ dynu_docker_image }}
+    container_name: dynu_{{ subdomain }}
+    restart: unless-stopped
+    environment:
+      - USERNAME={{ dynu_username }}
+      - HASHED_PASSWORD={{ dynu_password }}
+      - HOSTNAME={{ hostname }}
+{% endfor %}
