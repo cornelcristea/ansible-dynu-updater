@@ -23,7 +23,7 @@ FILTER_REGEX_EXCLUDE: >
 
 BASH_FILTER_REGEX_EXCLUDE: "(lib)"
 
-# ANSIBLE_LINT_FILE_NAME: '.ansible-lint.yml'
+ANSIBLE_ANSIBLE_LINT_CONFIG_FILE: '.ansible-lint.yml'
 
 MARKDOWN_FILTER_REGEX_EXCLUDE: '(license\.md|docs/licenses)'
 MARKDOWN_MARKDOWN_LINK_CHECK_DISABLE_ERRORS: true
@@ -43,7 +43,7 @@ PLUGINS:
   - https://raw.githubusercontent.com/oxsecurity/megalinter/main/.automation/test/mega-linter-plugin-test/test.megalinter-descriptor.yml
 
 PRE_COMMANDS:
-  - command: ansible-galaxy install -r requirements.yml
+  - command: ansible-galaxy collections install -r requirements.yml
     cwd: "workspace"
     continue_if_failed: false
 
