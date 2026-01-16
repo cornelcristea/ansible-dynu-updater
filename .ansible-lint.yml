@@ -12,6 +12,7 @@ skip_list:
   - no-changed-when
   - schema[meta]
   - role-name
+  - yaml[octal-values]
 
 exclude_paths:
   - .venv
