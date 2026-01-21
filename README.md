@@ -1,19 +1,17 @@
-# Ansible Role: Dynu IP Updater
+# Ansible Role: Dynu Updater
 
 ## Description
 
-Ansible role to deploy **Dynu IP Updater** Docker containers, keeping your Dynu DNS records updated with your current public IP address.
+Ansible role to deploy **Dynu Updater** Docker containers, keeping your Dynu DNS records updated with your current public IP address.
 
 The Docker image used by this role can be found here:
 [https://hub.docker.com/r/longkeyy/dynu-updater](https://hub.docker.com/r/longkeyy/dynu-updater)
 
----
 
 ## Requirements
 
 * Docker (must be installed on the target hosts)
 
----
 
 ## Installation
 
@@ -21,7 +19,6 @@ The Docker image used by this role can be found here:
 ansible-galaxy install cornelcristea.dynu_updater
 ```
 
----
 
 ## Role Variables
 
@@ -35,7 +32,6 @@ The role uses the following variables:
 | `dynu_docker_image` | string | Docker image for the container                              |
 | `dynu_base_dir`     | string | Directory where the `docker-compose.yml` file will be stored                                   |
 
----
 
 ## Example Playbook
 
@@ -92,5 +88,4 @@ We welcome contributions! Here’s how you can help improve this role:
 5. **Open a Pull Request (PR)**   
 Submit a PR from your branch. Include a clear description of your changes and why they’re needed.
 
-We appreciate your contributions!
-
+### We appreciate your contributions!

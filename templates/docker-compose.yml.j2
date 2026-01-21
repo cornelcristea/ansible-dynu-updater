@@ -10,4 +10,13 @@ services:
       - USERNAME={{ dynu_username }}
       - HASHED_PASSWORD={{ dynu_password | hash('md5') }}
       - HOSTNAME={{ hostname }}
+{%- if dynu_alias is defined %}
+      - ALIAS={{ dynu_alias }}
+{%- endif %}
+{%- if dynu_ipv4 is defined %}
+      - IPV4={{ dynu_ipv4 }}
+{%- endif %}
+{%- if dynu_ipv6 is defined %}
+      - IPV6={{ dynu_ipv6 }}
+{%- endif %}
 {% endfor %}
