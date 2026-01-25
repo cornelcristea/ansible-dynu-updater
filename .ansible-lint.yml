@@ -10,7 +10,6 @@ skip_list:
   - no-free-form
   - run-once
   - no-changed-when
-  - schema[meta]
   - role-name
   - yaml[octal-values]
 
