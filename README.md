@@ -35,12 +35,10 @@ The role uses the following variables:
 - hosts: servers
   roles:
     - role: cornelcristea.dynu_updater
-      vars:
-        dynu_username: "YOUR_USERNAME_HERE"
-        dynu_password: "YOUR_PASSWORD_HERE"
-        dynu_hosts:
-          - myapp.freeddns.org
-          - myblog.freeddns.org
+  vars:
+    dynu_hosts:
+      - myapp.freeddns.org
+      - myblog.freeddns.org
 ```
 
 ## How to Contribute
